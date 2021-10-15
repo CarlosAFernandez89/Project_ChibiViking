@@ -8,9 +8,24 @@ public class Project_ChibiViking : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { 
+			"Core", 
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"HeadMountedDisplay",
+			"GameplayAbilities",
+			"GameplayTags",
+			"GameplayTasks", });
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+		PrivateDependencyModuleNames.AddRange(new string[]
+		{
+			"Slate",
+			"SlateCore",
+			"InputCore",
+			"MoviePlayer",
+			"AIModule"
+		});
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

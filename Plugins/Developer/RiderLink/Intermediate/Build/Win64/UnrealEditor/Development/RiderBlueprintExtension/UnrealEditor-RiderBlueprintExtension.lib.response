@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-RiderBlueprintExtension.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\UE5Github\Project_ChibiViking\Intermediate\Build\Win64\Project_ChibiVikingEditor\Development\UnrealEd\SharedPCH.UnrealEd.RTTI.ShadowErrors.h.obj"
+"F:\UE5Github\Project_ChibiViking\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprintExtension\Module.RiderBlueprintExtension.cpp.obj"
+"F:\UE5Github\Project_ChibiViking\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprintExtension\Default.rc2.res"
+/OUT:"F:\UE5Github\Project_ChibiViking\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprintExtension\UnrealEditor-RiderBlueprintExtension.lib"
+/INCLUDE:IMPLEMENT_MODULE_RiderBlueprintExtension
