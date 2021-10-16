@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.0",
+	"EngineAssociation": "5.0EA",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -43,6 +43,11 @@
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "AdvancedFadeObjects",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/5797fa36906648ba8ffdeb6ee94c903e"
 		}
 	]
 }
