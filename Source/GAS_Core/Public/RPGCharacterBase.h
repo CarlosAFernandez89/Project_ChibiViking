@@ -24,6 +24,10 @@ class GAS_CORE_API ARPGCharacterBase : public ACharacter, public IAbilitySystemI
 public:
 	// Constructor and overrides
 	ARPGCharacterBase();
+
+	UFUNCTION(BlueprintCallable)
+	void BetterJump(float FallMultiplier, float JumpMultiplier);
+	
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void UnPossessed() override;
 	virtual void OnRep_Controller() override;

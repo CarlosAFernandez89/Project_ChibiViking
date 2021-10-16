@@ -17,6 +17,17 @@ ARPGCharacterBase::ARPGCharacterBase()
 	CharacterLevel = 1;
 	bAbilitiesInitialized = false;
 }
+void ARPGCharacterBase::BetterJump(float FallMultiplier, float JumpMultiplier)
+{
+	if(GetCharacterMovement()->Velocity.Z < 0)
+	{
+		GetCharacterMovement()->Velocity += GetActorUpVector() * GetWorld()->GetGravityZ() * (FallMultiplier - 1.0f) * GetWorld()->DeltaTimeSeconds;
+	}
+	else if( GetCharacterMovement()->Velocity.Z > 0)
+	{
+		GetCharacterMovement()->Velocity += GetActorUpVector() * GetWorld()->GetGravityZ() * (JumpMultiplier - 1.0f) * GetWorld()->DeltaTimeSeconds;
+	}
+}
 
 UAbilitySystemComponent* ARPGCharacterBase::GetAbilitySystemComponent() const
 {
